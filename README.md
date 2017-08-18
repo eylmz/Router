@@ -2,6 +2,16 @@
 Router - Fast, flexible routing for PHP, enabling you to quickly and easily build RESTful web applications.<br>
 Version : 1.0.0
 ___
+### Installation
+You can download it and using it without any changes.
+
+OR use Composer.
+
+It's recommended that you use Composer to install Route.
+```
+$ composer require eylmzrouter
+```
+___
 ### Simple Usage 
 ```php
 require 'vendor/autoload.php';
