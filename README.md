@@ -6,7 +6,7 @@ Version : 1.0.0
 * [Available Router Methods](#available-router-methods)
 * [Route Parameters](#route-parameters)
 * [Controller and Method Parameters](#controller-and-method-parameters)
-* [Regular Expression Constraints](#regular-expression-constratints)
+* [Regular Expression Constraints](#regular-expression-constraints)
 * [Named Routes](#named-routes)
 * [Route Groups](#route-groups)
 * [License](#license)
