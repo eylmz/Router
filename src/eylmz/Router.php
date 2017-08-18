@@ -181,9 +181,8 @@ class Router{
 		];
 	}
 	
-	static function routeNow(){
-		$method = @$_GET["url"];
-		$url = self::getUrl($method);
+	static function routeNow($url){
+		$url = self::getUrl($url);
 		$routes = self::getRoutes();
 		foreach($routes as $route){
 			$parameters = [];
@@ -192,7 +191,7 @@ class Router{
 			self::clearParameters($parameters);
 			self::handleMiddleware($route["middleware"]);
 			self::handleController($route["function"],$parameters);
-			self::setCurrent($route["name"],$url,$route["url"],$parameters,$method);
+			self::setCurrent($route["name"],$url,$route["url"],$parameters,self::getRequestMethod());
 			break;
 		}
 	}
