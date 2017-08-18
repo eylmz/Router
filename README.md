@@ -1,5 +1,6 @@
 # Router
-Router - Fast, flexible routing for PHP, enabling you to quickly and easily build RESTful web applications.
+Router - Fast, flexible routing for PHP, enabling you to quickly and easily build RESTful web applications.<br>
+Version : 1.0.0
 ___
 ### Simple Usage 
 ```php
