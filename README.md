@@ -1,6 +1,15 @@
 # Router
 Router - Fast, flexible routing for PHP, enabling you to quickly and easily build RESTful web applications.<br>
 Version : 1.0.0
+* [Installation](#installation)
+* [Simple Usage](#simple-usage)
+* [Available Router Methods](#available-router-methods)
+* [Route Parameters](#route-parameters)
+* [Controller and Method Parameters](#controller-and-method-parameters)
+* [Regular Expression Constraints](#regular-expression-constratints)
+* [Named Routes](#named-routes)
+* [Route Groups](#route-groups)
+* [License](#license)
 ___
 ### Installation
 You can download it and using it without any changes.
