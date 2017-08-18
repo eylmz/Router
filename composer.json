@@ -1,0 +1,19 @@
+{
+    "name": "eylmz/router",
+    "type": "library",
+    "description": "Router - Fast, flexible routing for PHP, enabling you to quickly and easily build RESTful web applications.",
+    "keywords": ["router", "php", "mvc", "restful", "api"],
+    "homepage": "http://emre.pw",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emre YILMAZ",
+            "email": "eylmz058@gmail.com",
+            "homepage": "http://emre.pw",
+            "role": "Back-end Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
