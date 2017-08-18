@@ -9,7 +9,7 @@ OR use Composer.
 
 It's recommended that you use Composer to install Route.
 ```
-$ composer require eylmzrouter
+$ composer require eylmz/router
 ```
 ___
 ### Simple Usage 
@@ -31,7 +31,7 @@ Router::any("/url2",function() {
 });
 // #Routers
 
-Router::routeNow();
+Router::routeNow(@$_GET["url"]);
 ```
 ___
 ### Available Router Methods
