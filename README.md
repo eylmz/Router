@@ -163,4 +163,4 @@ Router::middleware(["middleware","middleware2"])->group(function () {
 ```
 ___
 ### License
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
