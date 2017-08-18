@@ -13,7 +13,20 @@ $ composer require eylmz/router
 ```
 ___
 ### Simple Usage 
+#### .htaccess
+```
+Options -Indexes
+Options -MultiViews
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+``` 
+
+#### index.php
 ```php
+<?php
 require 'vendor/autoload.php';
 // or
 // require 'src/eylmz/Router.php';
