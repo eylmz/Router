@@ -40,7 +40,7 @@ require 'vendor/autoload.php';
 // or
 // require 'src/eylmz/Router.php';
 
-use eylmz/Router;
+use eylmz/Router/Router;
 
 Router::setControllerNamespace("App\\Controllers\\");
 Router::setMiddlewareNamespace("App\\Middlewares\\");
