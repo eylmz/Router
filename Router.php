@@ -171,7 +171,7 @@ class Router{
 		return $method;
 	}
 	
-	private static function setCurrent($name,$url,$pattern,$parameters,$method){
+	private function setCurrent($name,$url,$pattern,$parameters,$method){
 		self::$current = [
 			"name" => $name,
 			"url" => $url,
@@ -182,16 +182,18 @@ class Router{
 	}
 	
 	static function routeNow($url){
-		$url = self::getUrl($url);
-		$routes = self::getRoutes();
+	    $instance = self::getInstance();
+
+		$url = $instance->getUrl($url);
+		$routes = $instance->getRoutes();
 		foreach($routes as $route){
 			$parameters = [];
-			if(!self::controlUrl($url,$route["url"],$route["where"],$parameters))
+			if(!$instance->controlUrl($url,$route["url"],$route["where"],$parameters))
 				continue;
-			self::clearParameters($parameters);
-			self::handleMiddleware($route["middleware"]);
-			self::handleController($route["function"],$parameters);
-			self::setCurrent($route["name"],$url,$route["url"],$parameters,self::getRequestMethod());
+			$instance->clearParameters($parameters);
+			$instance->handleMiddleware($route["middleware"]);
+			$instance->handleController($route["function"],$parameters);
+			$instance->setCurrent($route["name"],$url,$route["url"],$parameters,$instance->getRequestMethod());
 			break;
 		}
 	}
